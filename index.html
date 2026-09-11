@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ankit Prajapati — Data Analyst portfolio showcasing SQL, Excel, Power BI, DAX, data analytics and NHAI project experience.">
+  <title>Ankit Prajapati | Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#071018; --panel:#0c1721; --panel2:#101e2a; --text:#edf5f7; --muted:#9eb0b9;
+      --line:rgba(255,255,255,.09); --accent:#61e7c2; --accent2:#78a7ff; --white:#fff;
+      --max:1160px; --radius:22px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 80% 0%,rgba(97,231,194,.09),transparent 28%),radial-gradient(circle at 10% 20%,rgba(120,167,255,.08),transparent 25%),var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(7,16,24,.78);backdrop-filter:blur(16px);border-bottom:1px solid transparent;transition:.3s}
+    .nav.scrolled{border-color:var(--line)}.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-family:"Space Grotesk";font-weight:700;font-size:20px;letter-spacing:-.03em}.brand span{color:var(--accent)}
+    .nav-links{display:flex;gap:25px;color:#b9c7ce;font-size:14px}.nav-links a:hover{color:var(--white)}
+    .menu{display:none;background:none;border:0;color:white;font-size:25px}
+    .hero{min-height:100vh;display:grid;align-items:center;padding:130px 0 80px;position:relative;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:70px;align-items:center}
+    .eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid rgba(97,231,194,.25);background:rgba(97,231,194,.06);padding:7px 12px;border-radius:999px;color:#b8f7e7;font-size:13px;font-weight:600}
+    .dot{width:7px;height:7px;background:var(--accent);border-radius:50%;box-shadow:0 0 16px var(--accent)}
+    h1{font-family:"Space Grotesk";font-size:clamp(52px,7vw,88px);line-height:.96;letter-spacing:-.065em;margin:22px 0}
+    h1 .gradient{background:linear-gradient(100deg,var(--white),#a8c8ff 45%,var(--accent));-webkit-background-clip:text;color:transparent}
+    .hero p{font-size:18px;color:var(--muted);max-width:680px;margin:0 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:12px;border:1px solid var(--line);font-weight:700;font-size:14px;transition:.25s}
+    .btn.primary{background:var(--accent);color:#06120f;border-color:var(--accent)}.btn:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.22)}
+    .btn.secondary{background:rgba(255,255,255,.035)}
+    .hero-card{border:1px solid var(--line);background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.02));padding:24px;border-radius:28px;box-shadow:0 25px 80px rgba(0,0,0,.25)}
+    .mini-label{font-size:12px;text-transform:uppercase;letter-spacing:.15em;color:#71858f}.metric{font-family:"Space Grotesk";font-size:52px;font-weight:700;margin:8px 0 2px}.metric-sub{color:var(--muted);font-size:14px}
+    .stack{display:grid;gap:14px;margin-top:26px}.stack-item{padding:15px;border-radius:15px;background:rgba(255,255,255,.035);border:1px solid var(--line)}
+    .stack-item strong{display:block;font-size:14px}.stack-item span{font-size:12px;color:var(--muted)}
+    section{padding:100px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:38px}
+    .kicker{color:var(--accent);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.18em}.section-title{font-family:"Space Grotesk";font-size:clamp(32px,4vw,50px);letter-spacing:-.05em;margin:8px 0 0}
+    .section-note{color:var(--muted);max-width:480px}.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .card{background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+    .card h3{font-family:"Space Grotesk";margin:0 0 9px;font-size:22px}.card p{color:var(--muted);margin:0}
+    .timeline{position:relative;display:grid;gap:18px}.timeline:before{content:"";position:absolute;left:13px;top:14px;bottom:14px;width:1px;background:var(--line)}
+    .role{position:relative;padding-left:44px}.role:before{content:"";position:absolute;left:8px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(97,231,194,.08)}
+    .role-top{display:flex;justify-content:space-between;gap:15px;align-items:baseline}.role h3{margin:0;font-size:19px}.date{color:var(--accent);font-size:12px;font-weight:700;white-space:nowrap}.company{color:#c4d0d6;font-size:14px;margin:3px 0 9px}.role ul{color:var(--muted);margin:0;padding-left:18px}.role li{margin:5px 0}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:10px 13px;border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:10px;font-size:13px;color:#d5e1e5}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project{min-height:270px;display:flex;flex-direction:column;justify-content:space-between}
+    .project-number{font-family:"Space Grotesk";color:#61727c;font-size:13px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:20px}.tag{font-size:11px;color:#a9c0c9;padding:5px 8px;border:1px solid var(--line);border-radius:999px}
+    .project-link{color:var(--accent);font-weight:700;font-size:13px;margin-top:20px;display:inline-block}
+    .resume{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}.resume-points{display:grid;gap:11px;margin-top:20px}.resume-point{display:flex;gap:12px;color:var(--muted);font-size:14px}.check{color:var(--accent);font-weight:800}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-card{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.025)}.contact-card b{display:block}.contact-card span{color:var(--muted);font-size:13px}
+    footer{padding:35px 0 55px;color:#71858f;border-top:1px solid var(--line);font-size:13px;display:flex;justify-content:space-between;gap:20px}
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}
+    @media(max-width:850px){.hero-grid,.resume,.contact,.grid-2,.projects{grid-template-columns:1fr}.hero-card{max-width:560px}.nav-links{display:none}.menu{display:block}.nav.open .nav-links{position:absolute;top:76px;left:20px;right:20px;display:grid;gap:0;background:#0b1720;border:1px solid var(--line);border-radius:16px;padding:10px}.nav.open .nav-links a{padding:11px}.section-head{display:block}.section-note{margin-top:14px}.hero{padding-top:120px}}
+    @media(max-width:560px){.container{width:min(calc(100% - 28px),var(--max))}.nav-inner{height:68px}section{padding:75px 0}h1{font-size:51px}.card{padding:22px}.role-top{display:block}.date{display:block;margin-top:4px}footer{display:block}.footer-right{margin-top:10px}}
+  </style>
+</head>
+<body>
+<header class="nav" id="nav"><div class="container nav-inner">
+  <a class="brand" href="#home">ANKIT<span>.</span></a>
+  <nav class="nav-links" id="links">
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#resume">Resume</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="menu" id="menu" aria-label="Open menu">☰</button>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+  <div class="reveal">
+    <div class="eyebrow"><span class="dot"></span> Open to Data Analyst opportunities</div>
+    <h1>Turning data into <span class="gradient">clear decisions.</span></h1>
+    <p>Data Analyst with 3.5+ years of professional experience, focused on SQL, Excel, Power BI and DAX. I build reliable reporting systems, automate recurring analysis, and translate complex operational data into decision-ready insights.</p>
+    <div class="actions"><a class="btn primary" href="#projects">View projects ↗</a><a class="btn secondary" href="mailto:prajapatiankit0412@gmail.com">Let's connect</a></div>
+  </div>
+  <aside class="hero-card reveal">
+    <div class="mini-label">Live analytics preview</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0">
+      <div class="stack-item"><span>Cases tracked</span><strong>5,000+</strong></div>
+      <div class="stack-item"><span>Data accuracy</span><strong>96%</strong></div>
+    </div>
+    <svg viewBox="0 0 420 110" width="100%" height="110" role="img" aria-label="Analytics trend visualization">
+      <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#61e7c2"/><stop offset="1" stop-color="#78a7ff"/></linearGradient></defs>
+      <path d="M0 86 C35 80,50 55,85 65 S130 90,165 54 S210 42,245 55 S285 70,320 28 S365 45,420 10" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M0 100H420" stroke="rgba(255,255,255,.1)"/>
+    </svg>
+    <div class="mini-label">Reporting impact</div>
+    <div class="mini-label">Professional snapshot</div><div class="metric">3.5+ yrs</div><div class="metric-sub">Analytics experience</div>
+    <div class="stack">
+      <div class="stack-item"><strong>Data Analytics</strong><span>SQL · Power BI · DAX · Excel</span></div>
+      <div class="stack-item"><strong>Domain</strong><span>Infrastructure · Legal Tech · Operations</span></div>
+      <div class="stack-item"><strong>Current focus</strong><span>Data Analyst / Business Analyst roles</span></div>
+    </div>
+  </aside>
+</div></section>
+
+<section id="about"><div class="container">
+  <div class="section-head"><div><div class="kicker">01 — About</div><h2 class="section-title">Analytical thinking. Practical impact.</h2></div><p class="section-note">I work at the intersection of business requirements, data quality and visual analytics.</p></div>
+  <div class="grid-2">
+    <div class="card reveal"><h3>What I do</h3><p>I analyze operational and business data, design KPI reporting, validate source data, automate recurring workflows and develop Power BI dashboards for senior stakeholders. My approach combines structured problem-solving with strong attention to data accuracy.</p></div>
+    <div class="card reveal"><h3>Education & mobility</h3><p>MSc Information Technology, University of Mumbai. Based in Patna, Bihar, with flexibility to relocate and work across remote, hybrid or on-site environments.</p></div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="container">
+  <div class="section-head"><div><div class="kicker">02 — Experience</div><h2 class="section-title">Selected experience</h2></div></div>
+  <div class="timeline">
+    <article class="role reveal"><div class="role-top"><h3>Data Analyst</h3><span class="date">Current</span></div><div class="company">Jupitice Justice Technology · NHAI Regional Office, Patna</div><ul><li>Analyze NHAI Data Lake, Litigation Management System and Excel data to track case pendency, CNR status, disposal, project and operational KPIs.</li><li>Build and maintain Power BI reporting with data cleaning, validation, transformation, DAX measures and KPI logic.</li><li>Coordinate with PIUs, advocates and internal stakeholders to resolve data gaps, duplicates, petition uploads and disposal-status mismatches.</li><li>Prepare decision-ready reports for senior officers and review meetings, with emphasis on data accuracy and timely updates.</li></ul></article>
+    <article class="role reveal"><div class="role-top"><h3>Earlier Analytics Experience</h3><span class="date">Prior</span></div><div class="company">Cognizant · Data & Analytics</div><ul><li>Worked with structured business data and reporting workflows, strengthening SQL, analytical problem-solving and stakeholder collaboration.</li><li>Developed a foundation in data validation, reporting and translating business requirements into analytical outputs.</li></ul></article>
+  </div>
+</div></section>
+
+<section id="skills"><div class="container">
+  <div class="section-head"><div><div class="kicker">03 — Skills</div><h2 class="section-title">Tools I work with</h2></div></div>
+  <div class="card reveal"><div class="skills">
+    <span class="skill">SQL</span><span class="skill">Microsoft Excel</span><span class="skill">Power Query</span><span class="skill">Pivot Tables</span><span class="skill">VLOOKUP / XLOOKUP</span><span class="skill">Power BI</span><span class="skill">DAX</span><span class="skill">Data Modeling</span><span class="skill">Data Cleaning</span><span class="skill">Data Transformation</span><span class="skill">Data Validation</span><span class="skill">KPI Reporting</span><span class="skill">Dashboard Automation</span><span class="skill">Stakeholder Communication</span><span class="skill">Requirements Analysis</span><span class="skill">Documentation</span>
+  </div></div>
+</div></section>
+
+<section id="projects"><div class="container">
+  <div class="section-head"><div><div class="kicker">04 — Projects</div><h2 class="section-title">Analytics that solve real problems.</h2></div><p class="section-note">Portfolio-ready case studies based on the kind of operational analytics I deliver professionally.</p></div>
+  <div class="projects">
+    <article class="card project reveal"><div><div class="project-number">PROJECT 01</div><h3>NHAI Litigation Analytics</h3><p>Power BI reporting for pending vs. disposed cases, aging buckets, PIU-level performance, CNR validation and advocate-level disposal analysis.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Excel</span><span class="tag">Data Quality</span></div></div><a class="project-link" href="#contact">Discuss project →</a></article>
+    <article class="card project reveal"><div><div class="project-number">PROJECT 02</div><h3>Cause List & Case Data Quality</h3><p>Structured workflow for consolidating cause lists, identifying duplicates, validating case identifiers and tracking data-lake updates across PIUs.</p><div class="tags"><span class="tag">SQL</span><span class="tag">Excel</span><span class="tag">Validation</span><span class="tag">Automation</span></div></div><a class="project-link" href="#contact">Discuss project →</a></article>
+    <article class="card project reveal"><div><div class="project-number">PROJECT 03</div><h3>Operational KPI Dashboard</h3><p>Executive-style KPI reporting combining multiple operational measures into a consistent view for review meetings and management decisions.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">KPI Design</span></div></div><a class="project-link" href="#contact">Discuss project →</a></article>
+    <article class="card project reveal"><div><div class="project-number">PROJECT 04</div><h3>Data Reconciliation & Cleanup</h3><p>Reconciled source-system records, corrected duplicates and mismatched statuses, and established repeatable checks to improve reporting reliability.</p><div class="tags"><span class="tag">Excel</span><span class="tag">Power Query</span><span class="tag">Data Governance</span></div></div><a class="project-link" href="#contact">Discuss project →</a></article>
+  </div>
+  <div class="card reveal" style="margin-top:20px">
+    <div class="kicker">CASE STUDY — NHAI</div>
+    <h3 style="font-family:Space Grotesk;font-size:26px;margin:8px 0">From fragmented case data to decision-ready intelligence</h3>
+    <div class="grid-2" style="margin-top:18px">
+      <div><div class="mini-label">Challenge</div><p style="color:var(--muted)">Multiple Excel and operational sources made case monitoring, validation and cause-list preparation time-consuming.</p></div>
+      <div><div class="mini-label">Solution</div><p style="color:var(--muted)">Power Query + Power BI data modeling, DAX KPI measures and validation workflows consolidated the reporting process.</p></div>
+      <div><div class="mini-label">Result</div><p style="color:var(--muted)">Preparation time reduced from 4 hours to under 20 minutes per refresh, while 5,000+ cases became easier to analyze.</p></div>
+      <div><div class="mini-label">Business impact</div><p style="color:var(--muted)">Insights supported senior NHAI officials in prioritizing case-resolution efforts across 15+ districts.</p></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="resume"><div class="container">
+  <div class="section-head"><div><div class="kicker">05 — Resume</div><h2 class="section-title">Recruiter-ready profile.</h2></div></div>
+  <div class="resume">
+    <div class="card reveal"><h3>Data Analyst · 4.6 years</h3><p>Relevant experience includes 3.6 years in data analytics, with current work spanning infrastructure and legal-technology operations.</p><div class="resume-points"><div class="resume-point"><span class="check">✓</span>SQL, Excel, Power BI and DAX</div><div class="resume-point"><span class="check">✓</span>Dashboard development and KPI reporting</div><div class="resume-point"><span class="check">✓</span>Data cleaning, validation and transformation</div><div class="resume-point"><span class="check">✓</span>Stakeholder requirements and business communication</div></div></div>
+    <div class="card reveal"><h3>Download resume</h3><p>Add your final ATS resume PDF here and this button will become your primary recruiter CTA.</p><div class="actions" style="margin-top:20px"><a class="btn primary" href="resume.pdf" download>Download CV ↓</a></div></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="container">
+  <div class="section-head"><div><div class="kicker">06 — Contact</div><h2 class="section-title">Let's talk about the next opportunity.</h2></div><p class="section-note">Available for Data Analyst, Business Analyst and related analytics roles.</p></div>
+  <div class="contact">
+    <a class="contact-card reveal" href="mailto:prajapatiankit0412@gmail.com"><div>✉</div><div><b>Email</b><span>prajapatiankit0412@gmail.com</span></div></a>
+    <a class="contact-card reveal" href="https://www.linkedin.com/in/ankitprajapati08" target="_blank" rel="noopener"><div>in</div><div><b>LinkedIn</b><span>linkedin.com/in/ankitprajapati08</span></div></a>
+    <a class="contact-card reveal" href="https://github.com/Ankitprajapati00" target="_blank" rel="noopener"><div>⌘</div><div><b>GitHub</b><span>github.com/Ankitprajapati00</span></div></a>
+    <div class="contact-card reveal"><div>↗</div><div><b>Location</b><span>Patna, Bihar · Open to relocation</span></div></div>
+  </div>
+</div></section>
+</main>
+
+<footer class="container"><div>© <span id="year"></span> Ankit Prajapati. All rights reserved.</div><div class="footer-right">Built for data-driven careers.</div></footer>
+<script>
+  const nav=document.getElementById('nav'), menu=document.getElementById('menu'), links=document.getElementById('links');
+  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>10));
+  menu.addEventListener('click',()=>nav.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+  document.getElementById('year').textContent=new Date().getFullYear();
+  const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
